@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage one</title>
+    <link rel="stylesheet"  href="index.css" />
+</head>
+<body>
+    <div>
+        <div>
+
+            <h1  data-testid="slackUserName">Bright</h1>
+            <img src="https://media.licdn.com/dms/image/C5603AQGOIQlIy_Vk3A/profile-displayphoto-shrink_200_200/0/1654086100436?e=1697068800&v=beta&t=hatFcdCbdF4i4EpwuytnCR72vId1B1wbwzCrKAhv9cQ" alt="Avatar" data-testid="slackDisplayImage">
+        </div>
+            
+          <div data-testid="currentDayOfTheWeek" class="daysOfWeek">
+        <script>
+            const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const currentDate = new Date();
+            const currentDay = daysOfWeek[currentDate.getUTCDay()];
+            document.write(`Current day of the Week: ${currentDay}`);
+        </script>
+    </div>
+
+
+    <div data-testid="currentUTCTime">
+        <script>
+            const currentUTCTime = new Date().getTime();
+            document.write(`Current UTC time in milliseconds: ${currentUTCTime}`);
+        </script>
+    </div>
+    <p data-testid="myTrack">Track: <span> Frontend Development</span></p>
+
+    <a href="https://github.com/brytchukz/HNG-bright_stage1"> My Github</a>
+    </div>
+</body>
+</html> 
